@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import Services from "../components/Services";
+import FeaturedRooms from "../components/FeaturedRooms";
 
-export default const home = () => {
+const home = () => {
   return (
     <>
       <Hero>
@@ -14,6 +18,10 @@ export default const home = () => {
           </Link>
         </Banner>
       </Hero>
+      <Services />
+      <FeaturedRooms />
     </>
   );
 };
+
+export default home;
